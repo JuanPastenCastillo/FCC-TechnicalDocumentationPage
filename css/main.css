@@ -1,0 +1,157 @@
+/* ________________________________
+BASE
+________________________________ */
+
+:root {
+ --borderCrimson: 2px crimson solid;
+ --borderBlack: 2px black solid;
+ --borderForestGreen: 2px forestgreen solid;
+ --borderCyan: 2px cyan solid;
+ --borderDarkBlue: 2px darkblue solid;
+ --borderBlueViolet: 2px blueviolet solid;
+ --borderCoral: 2px coral solid;
+}
+
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ list-style: none;
+ text-decoration: none;
+ color: black;
+}
+
+/* ________________________________ 
+CONTAINER SIDE FIXED BAR
+________________________________ */
+
+#containerSideFixedBar {
+ /* border: var(--borderForestGreen); */
+ border-right: 3px solid grey;
+ height: 100%;
+ width: 310px;
+ position: fixed;
+ z-index: 1;
+ top: 0;
+ left: 0;
+ overflow-x: hidden;
+}
+
+/* ________________________________ 
+TITLE H1
+________________________________ */
+
+#titleH1 {
+ /* border:var(--borderCoral); */
+ text-align: center;
+}
+
+/* ________________________________
+ CONTAINER OF ITEMS FIXED SIDE BAR
+________________________________  */
+
+#containerOfItemsFixedSideBar {
+ /* border:var(--borderBlueViolet); */
+ height: 80vh;
+}
+
+/* ________________________________ 
+ITEMS OF FIXED SIDE BAR
+________________________________  */
+
+.itemsOfFixedSideBar {
+ /* border: var(--borderBlack); */
+ cursor: pointer;
+ padding: 1.2rem 0 1.2rem 1.5rem;
+ border-top: 2px solid #000;
+}
+
+.itemsOfFixedSideBar:hover {
+ background-color: antiquewhite;
+}
+
+#introduction {
+ border-top-left-radius: 6px;
+ border-top-right-radius: 6px;
+}
+
+#reference {
+ border-bottom-left-radius: 6px;
+ border-bottom-right-radius: 6px;
+ border-bottom: 2px solid black;
+}
+
+/* ________________________________ 
+MAIN CONTAINER
+________________________________ */
+
+#mainContainer {
+ /* border: var(--borderBlack); */
+ margin-left: 310px;
+ padding-left: 0.9rem;
+}
+
+/* ________________________________ 
+INTRODUCTION
+________________________________ */
+
+
+/* ________________________________ 
+WHAT YOU SHOULD ALREADY KNOW
+________________________________ */
+
+/* ________________________________ 
+MAIN CONTAINER
+________________________________ */
+
+/* ________________________________ 
+JAVASCRIPT AND JAVA
+________________________________ */
+
+/* ________________________________ 
+HELLO WORLD
+________________________________ */
+
+/* ________________________________ 
+VARIABLES
+________________________________ */
+
+/* ________________________________ 
+DECLARING VARIABLES
+________________________________ */
+
+/* ________________________________ 
+VARIABLE SCOPE
+________________________________ */
+
+/* ________________________________ 
+GLOBAL VARIABLES
+________________________________ */
+
+/* ________________________________ 
+CONSTANTS
+________________________________ */
+
+/* ________________________________ 
+DATA TYPES
+________________________________ */
+
+/* ________________________________ 
+IF... ELSE STATEMENT
+________________________________ */
+
+/* ________________________________ 
+WHILE STATEMENT
+________________________________ */
+
+/* ________________________________ 
+FUNCTION DECLARATIONS
+________________________________ */
+
+/* ________________________________ 
+REFERENCE
+________________________________ */
+
+/* ________________________________ 
+FOOTER
+________________________________ */
