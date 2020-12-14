@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* ________________________________
 BASE
 ________________________________ */
@@ -13,6 +20,7 @@ ________________________________ */
 }
 
 * {
+ -webkit-box-sizing: border-box;
  box-sizing: border-box;
  margin: 0;
  padding: 0;
@@ -66,10 +74,11 @@ ________________________________ */
 #titleH1 {
  /* border: var(--borderCoral); */
  text-align: center;
+ position: -webkit-sticky;
  position: sticky;
  top: 0;
  background-color: rgba(255, 255, 255, 1);
- margin: 0 auto 0.5rem auto;
+ margin: 0.8rem auto 0.5rem auto;
  /* width:100%; */
  /* padding: 0 2.9rem 0 0.9rem; */
 }
@@ -85,6 +94,8 @@ ________________________________  */
 .itemsOfFixedSideBar {
  /* border: var(--borderBlack); */
  width: 100%;
+ display: -webkit-box;
+ display: -ms-flexbox;
  display: flex;
 }
 
@@ -128,7 +139,11 @@ ________________________________ */
 .titleH2 {
  /* border:var(--borderBlack); */
  height: 60px;
+ display: -webkit-box;
+ display: -ms-flexbox;
  display: flex;
+ -webkit-box-align: center;
+ -ms-flex-align: center;
  align-items: center;
 }
 
@@ -144,7 +159,6 @@ ________________________________ */
 
 .unorderListOfParagraphs li {
  list-style: disc;
- /* border: var(--borderBlueViolet); */
  margin-bottom: 1.2rem;
 }
 
@@ -199,12 +213,12 @@ ________________________________ */
 DATA TYPES
 ________________________________ */
 
-.unorderListSecondLevel li {
+.unorderListOfParagraphs .unorderListSecondLevel {
  margin-left: 3.2rem;
  list-style: circle;
 }
 
-.unorderListSecondLevel li:last-child {
+.unorderListOfParagraphs .unorderListSecondLevel:last-child {
  margin-bottom: 1.2rem;
 }
 
@@ -213,7 +227,12 @@ IF... ELSE STATEMENT
 ________________________________ */
 
 code {
+ display: -webkit-box;
+ display: -ms-flexbox;
  display: flex;
+ -webkit-box-orient: vertical;
+ -webkit-box-direction: normal;
+ -ms-flex-flow: column wrap;
  flex-flow: column wrap;
  word-break: break-all;
 }
@@ -244,7 +263,12 @@ ________________________________ */
  margin-left: 310px;
  position: fixed;
  bottom: 0;
+ display: -webkit-box;
+ display: -ms-flexbox;
  display: flex;
+ -webkit-box-orient: vertical;
+ -webkit-box-direction: normal;
+ -ms-flex-flow: column wrap;
  flex-flow: column wrap;
  text-align: center;
  width: calc(100% - 310px);
