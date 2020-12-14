@@ -19,6 +19,25 @@ ________________________________ */
  list-style: none;
  text-decoration: none;
  color: black;
+ font-family: 'Libre Baskerville', serif;
+ font-size: 100%;
+ line-height: 1.9rem;
+}
+
+h1 {
+ font-size: 2rem;
+}
+
+h2 {
+ font-size: 1.8rem;
+}
+
+p {
+ font-size: 1.3rem;
+}
+
+ul {
+ font-size: 1.1rem;
 }
 
 /* ________________________________ 
@@ -27,7 +46,7 @@ ________________________________ */
 
 #containerSideFixedBar {
  /* border: var(--borderForestGreen); */
- border-right: 3px solid grey;
+ /* border-right: 3px solid grey; */
  height: 100%;
  width: 310px;
  position: fixed;
@@ -35,15 +54,24 @@ ________________________________ */
  top: 0;
  left: 0;
  overflow-x: hidden;
+ overflow-y: scroll;
+ scrollbar-color: rgba(150, 135, 143, 0.4) rgba(140, 126, 140, 0.1);
+ /* -ms-overflow-style: none; */
+ scrollbar-width: thin;
 }
+
+/* #containerSideFixedBar::-webkit-scrollbar {
+ display: none;
+} */
 
 /* ________________________________ 
 TITLE H1
 ________________________________ */
 
 #titleH1 {
- /* border:var(--borderCoral); */
+ /* border: var(--borderCoral); */
  text-align: center;
+ /* padding: 0 2.9rem 0 0.9rem; */
 }
 
 /* ________________________________
@@ -51,8 +79,8 @@ ________________________________ */
 ________________________________  */
 
 #containerOfItemsFixedSideBar {
- /* border:var(--borderBlueViolet); */
- height: 80vh;
+ /* border: var(--borderBlueViolet); */
+ /* height: 100%; */
 }
 
 /* ________________________________ 
@@ -61,40 +89,72 @@ ________________________________  */
 
 .itemsOfFixedSideBar {
  /* border: var(--borderBlack); */
- cursor: pointer;
- padding: 1.2rem 0 1.2rem 1.5rem;
- border-top: 2px solid #000;
+ width: 100%;
+ display: flex;
 }
 
 .itemsOfFixedSideBar:hover {
  background-color: antiquewhite;
 }
 
-#introduction {
- border-top-left-radius: 6px;
- border-top-right-radius: 6px;
-}
-
-#reference {
- border-bottom-left-radius: 6px;
- border-bottom-right-radius: 6px;
- border-bottom: 2px solid black;
+.itemsOfFixedSideBar a {
+ /* border: var(--borderBlack); */
+ /* border: 1px solid grey; */
+ border-top: 2px solid grey;
+ width: 100%;
+ padding: 1.2rem 0 1.2rem 1.5rem;
 }
 
 /* ________________________________ 
-MAIN CONTAINER
+CONTAINER OF ALL SECTIONS BELOW
 ________________________________ */
 
-#mainContainer {
+#containerOfAllSectionsBelow {
  /* border: var(--borderBlack); */
  margin-left: 310px;
- padding-left: 0.9rem;
+ margin-bottom: 75px;
+ z-index: 10;
+ position: relative;
+ /* background-color: antiquewhite; */
+ background-color: rgb(255, 255, 255);
 }
 
 /* ________________________________ 
 INTRODUCTION
 ________________________________ */
 
+.containerOfContentH2 {
+ /* border: var(--borderCoral); */
+ margin: 1.9rem 1.6rem 1.2rem;
+ /* height: 60vw; */
+}
+
+.titleH2 {
+ /* border:var(--borderBlack); */
+ height: 60px;
+ display: flex;
+ align-items: center;
+}
+
+.paragraphOfH2 {
+ /* border: var(--borderDarkBlue); */
+ margin: 1.2rem 0 1rem 1.2rem;
+}
+
+.unorderListOfParagraphs {
+ /* border: var(--borderForestGreen); */
+ margin-left: 2.9rem;
+}
+
+.unorderListOfParagraphs li {
+ list-style: disc;
+ /* border: var(--borderBlueViolet); */
+ margin-bottom: 1.2rem;
+}
+
+.unorderListOfParagraphs li:last-child {
+ margin-bottom: 0;
+}
 
 /* ________________________________ 
 WHAT YOU SHOULD ALREADY KNOW
@@ -111,6 +171,13 @@ ________________________________ */
 /* ________________________________ 
 HELLO WORLD
 ________________________________ */
+
+.codeSection {
+ background-color: #f7f7f7;
+ margin: 1.9rem 0 1.9rem 1.9rem;
+ padding: 0.8rem;
+ border-radius: 6px;
+}
 
 /* ________________________________ 
 VARIABLES
@@ -136,9 +203,23 @@ ________________________________ */
 DATA TYPES
 ________________________________ */
 
+.unorderListSecondLevel li {
+ margin-left: 3.2rem;
+ list-style: circle;
+}
+
+.unorderListSecondLevel li:last-child {
+ margin-bottom: 1.2rem;
+}
+
 /* ________________________________ 
 IF... ELSE STATEMENT
 ________________________________ */
+
+code {
+ display: flex;
+ flex-flow: column wrap;
+}
 
 /* ________________________________ 
 WHILE STATEMENT
@@ -155,3 +236,30 @@ ________________________________ */
 /* ________________________________ 
 FOOTER
 ________________________________ */
+
+#containerOfFooter {
+ /* border: var(--borderBlueViolet); */
+ margin-left: 310px;
+ position: fixed;
+ bottom: 0;
+ display: flex;
+ flex-flow: column wrap;
+ text-align: center;
+ width: calc(100% - 310px);
+ z-index: 1;
+}
+
+#paragraphOfFooter, #adressFooter {
+ font-family: monospace;
+ font-family: 0.5rem;
+ padding-right: 0.9rem;
+}
+
+.linkOnFooter{
+ border-bottom: 1px solid #000;
+ font-family: 0.5rem;
+}
+
+#paragraphOfFooter {
+ border-top: 1px solid black;
+}

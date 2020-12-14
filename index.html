@@ -3,6 +3,7 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="./css/normalizeCompress.css">
  <link rel="stylesheet" href="./css/main.css">
  <title>Technical Documentation Page</title>
@@ -34,80 +35,80 @@ ________________________________ -->
 ________________________________ -->
    
    <li class="itemsOfFixedSideBar" id="introduction">
-     <a href=#>
+     <a href="#introductionMainContent">
       Introduction
      </a>
    </li>
    
    <li class="itemsOfFixedSideBar" id="whatYouShouldAlreadyKnow">
-    <a href="#">
+    <a href="#whatYouShouldAlreadyKnowMainContent">
      What you should already know?
     </a>
    </li>
    
    <li class="itemsOfFixedSideBar" id="javascriptAndJava">
-    <a href="#">
+    <a href="#javascriptAndJavaMainContent">
      JavaScript and Java
     </a>
     
    </li>
    <li class="itemsOfFixedSideBar" id="helloWorld">
-    <a href="#">
+    <a href="#helloWorldMainContent">
      Hello world
     </a>
    </li>
    
    <li class="itemsOfFixedSideBar" id="variables">
-    <a href="#">
+    <a href="#variablesMainContent">
      Variables
     </a>
    </li>
    
    <li class="itemsOfFixedSideBar" id="declaringVariables">
-    <a href="#">
+    <a href="#declaringVariablesMainContent">
      Declaring variables
     </a>
    </li>
    
    <li class="itemsOfFixedSideBar" id="variableScope">
-    <a href="#">
+    <a href="#variableScopeMainContent">
      Variable scope
     </a>
    </li>
    
    <li class="itemsOfFixedSideBar" id="globalVariables">
-    <a href="#">
+    <a href="#globalVariablesMainContent">
      Global variables
     </a>
    </li>
    
    <li class="itemsOfFixedSideBar" id="constants">
-    <a href="#">
+    <a href="#constantsMainContent">
      Constants
     </a>
    </li>
    
    <li class="itemsOfFixedSideBar" id="dataTypes">
-    <a href="#">
+    <a href="#dataTypeMainContent">
      Data types
     </a>
    </li>
    
    <li class="itemsOfFixedSideBar" id="ifElseStatement">
-    <a href="#">
+    <a href="#IfElseStatementMainContent">
      If... else statement
     </a>
    </li>
    
    <li class="itemsOfFixedSideBar" id="whileStatement">
-    <a href="#">
+    <a href="#whileStatementMainContent">
      While statement
     </a>
    </li>
    
    <li class="itemsOfFixedSideBar" id="functionDeclarations">
-    <a href="#">
-     Funciton declarations
+    <a href="#functionDeclarationsMainContent">
+     Function declarations
     </a>
    </li>
    
@@ -121,17 +122,34 @@ ________________________________ -->
  </nav>
  
 <!-- ________________________________
- MAIN CONTAINER 
+CONTAINER OF ALL SECTIONS BELOW
 ________________________________ -->
 
- <div id="mainContainer">
+ <div id="containerOfAllSectionsBelow">
   
 <!-- ________________________________
  INTRODUCTION
 ________________________________ -->
+
+   
+  
   <section class="containerOfContentH2">
    <h2 class="titleH2" id="introductionMainContent">Introduction</h2>
-   <p class="paragraphOfH2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at asperiores aperiam dolorum nobis ab aliquam impedit blanditiis. Suscipit recusandae maxime placeat amet esse magnam similique qui porro. Saepe, rem.</p>
+   <p class="paragraphOfH2">
+    JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
+   </p>
+   <p class="paragraphOfH2">
+    JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
+   </p>
+   <ul class="unorderListOfParagraphs">
+    <li class="unorderListFirsLevel">
+     Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.     
+    </li>
+    <li class="unorderListFirsLevel">
+     Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.
+    </li>
+   </ul>
+   
   </section>
   
 <!-- ________________________________
@@ -139,7 +157,21 @@ WHAT YOU SHOULD ALREADY KNOW
 ________________________________ -->
   <section class="containerOfContentH2">
    <h2 class="titleH2" id="whatYouShouldAlreadyKnowMainContent">What you should already know</h2>
-   <p class="paragraphOfH2">Voluptate, blanditiis provident veritatis earum sed consequuntur vel saepe error odit veniam ut eum cum impedit nam voluptatibus sit! Cupiditate numquam eum atque aspernatur officia natus eligendi, vitae labore quae.</p>
+   <p class="paragraphOfH2">
+    This guide assumes you have the following basic background:
+   </p>
+   <ul class="unorderListOfParagraphs">
+    <li class="unorderListFirsLevel">
+     A general understanding of the Internet and the World Wide Web (WWW).
+    </li>
+    <li class="unorderListFirsLevel">
+     Good working knowledge of HyperText Markup Language (HTML).
+    </li>
+    <li class="unorderListFirsLevel">
+     Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about
+    JavaScript.
+   </li>
+   </ul>
   </section>
   
 <!-- ________________________________
@@ -147,7 +179,17 @@ JAVASCRIPT AND JAVA
 ________________________________ -->
   <section class="containerOfContentH2">
    <h2 class="titleH2" id="javascriptAndJavaMainContent">JavaScript and Java</h2>
-   <p class="paragraphOfH2">Velit harum error, officiis eligendi consequuntur voluptates autem eum, quis recusandae repellendus nulla, sunt voluptatem! Dolor corporis saepe possimus, expedita laboriosam nesciunt obcaecati dolorem ea earum iure nemo dicta blanditiis.</p>
+   <p class="paragraphOfH2">
+    JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript language resembles Java but does not have Java's static typing and strong type checking. JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript.
+   </p>
+   
+   <p class="paragraphOfH2">
+    In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, boolean, and string values. JavaScript has a prototype-based object model instead of the more common class-based object model. The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. JavaScript also supports functions without any special declarative requirements. Functions can be properties of objects, executing as loosely typed methods.
+   </p>
+   
+   <p class="paragraphOfH2">
+    JavaScript is a very free-form language compared to Java. You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. Variables, parameters, and function return types are not explicitly typed.
+   </p>
   </section>
  
 <!-- ________________________________
@@ -155,7 +197,18 @@ HELLO WORLD
 ________________________________ -->  
   <section class="containerOfContentH2">
    <h2 class="titleH2" id="helloWorldMainContent">Hello world</h2>
-   <p class="paragraphOfH2">Voluptate aspernatur repudiandae, voluptatum voluptatibus cumque, velit expedita praesentium fugiat, laborum minus quo? Odio dicta, porro officia nisi neque quos esse, explicabo dolore repellat id iure iusto? Cupiditate, perspiciatis dolorum.</p>
+   <p class="paragraphOfH2">
+    To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
+   </p>
+   <div class="codeSection">
+    <code>
+     function greetMe(yourName) { alert("Hello " + yourName); }
+     greetMe("World");
+    </code>
+   </div>
+   <p class="paragraphOfH2">
+    Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
+   </p>
   </section>
   
 <!-- ________________________________
@@ -163,7 +216,17 @@ VARIABLES
 ________________________________ -->  
   <section class="containerOfContentH2">
    <h2 class="titleH2" id="variablesMainContent">Variables</h2>
-   <p class="paragraphOfH2">Voluptatem, aliquam hic! Maxime expedita ipsum saepe, nulla totam laboriosam dicta voluptates veniam beatae exercitationem. Corrupti vero delectus sunt commodi quam neque reiciendis porro quidem, fugiat temporibus officia possimus aperiam.</p>
+   <p class="paragraphOfH2">
+    You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.
+   </p>
+   
+   <p class="paragraphOfH2">
+    A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).
+   </p>
+   
+   <p class="paragraphOfH2">
+    You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.
+   </p>
   </section>
   
 <!-- ________________________________
@@ -171,7 +234,37 @@ DECLARING VARIABLES
 ________________________________ -->  
   <section class="containerOfContentH2">
    <h2 class="titleH2" id="declaringVariablesMainContent">Declaring variables</h2>
-   <p class="paragraphOfH2">Libero ad ullam animi soluta. Esse facere laborum debitis quas labore, culpa at, dolorum magnam nesciunt dolorem voluptate odio recusandae, nulla voluptates repudiandae veritatis repellendus atque accusamus voluptatum tempore aut.</p>
+   <p class="paragraphOfH2">
+    You can declare a variable in three ways:
+   </p>
+   
+   <p class="paragraphOfH2">
+    With the keyword var. For example,
+   </p>
+   
+   <div class="codeSection">
+    <code>
+     var x = 42.
+    </code>
+   </div>
+   
+   <p class="paragraphOfH2">
+    This always declares a global variable. It generates a strict JavaScript warning. You shouldn't use this variant.
+   </p>
+   
+   <p class="paragraphOfH2">
+    With the keyword let. For example,
+   </p>
+
+   <div class="codeSection">
+    <code>
+     let y = 13
+    </code>
+   </div>
+   
+   <p class="paragraphOfH2">
+    This syntax can be used to declare a block scope local variable. See Variable scope below.
+   </p>
   </section>
   
 <!-- ________________________________
@@ -179,7 +272,32 @@ VARIABLE SCOPE
 ________________________________ -->
   <section class="containerOfContentH2">
    <h2 class="titleH2" id="variableScopeMainContent">Variable scope</h2>
-   <p class="paragraphOfH2">Qui voluptatum recusandae voluptas impedit repudiandae suscipit! At libero ab voluptatem dolorum iusto voluptas, eum maiores magnam cumque accusantium, omnis molestias eveniet, quo eaque hic dicta. Laudantium magni omnis deleniti?</p>
+   <p class="paragraphOfH2">
+    When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.
+   </p>
+   
+   <p class="paragraphOfH2">
+    JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.
+   </p>
+   
+   <div class="codeSection">
+    <code>
+      if (true) { var x = 5; } console.log(x); 
+      // 5
+     </code>
+   </div>
+   
+   <p class="paragraphOfH2">
+    This behavior changes, when using the let declaration introduced in ECMAScript 2015.
+   </p>
+   
+   <div class="codeSection">
+    <code>
+     if (true) { let y = 5; } console.log(y); 
+     // ReferenceError: y is not defined
+    </code>
+   </div>
+   
   </section>
   
 <!-- ________________________________
@@ -187,7 +305,12 @@ GLOBAL VARIABLES
 ________________________________ -->
   <section class="containerOfContentH2">
    <h2 class="titleH2" id="globalVariablesMainContent">Global variables</h2>
-   <p class="paragraphOfH2">Itaque odit, expedita quae accusamus accusantium in a suscipit impedit veritatis illum nisi, obcaecati aspernatur tenetur autem explicabo consequuntur nulla iure facere quia eius soluta architecto! Temporibus sint ipsam ab.</p>
+   <p class="paragraphOfH2">
+    Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.
+   </p>
+   <p class="paragraphOfH2">
+    Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.
+   </p>
   </section>
   
 <!-- ________________________________
@@ -195,7 +318,48 @@ CONSTANTS
 ________________________________ -->
   <section class="containerOfContentH2">
    <h2 class="titleH2" id="constantsMainContent">Constants</h2>
-   <p class="paragraphOfH2">Mollitia molestiae laboriosam eligendi, rem ipsum, ad earum necessitatibus nobis consequatur repudiandae ab voluptatem a tempore autem alias non voluptas quod porro natus vero exercitationem, error officiis quidem! Nisi, iusto.</p>
+   <p class="paragraphOfH2">
+    You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.
+   </p>
+   
+   <div class="codeSection">
+    <code>
+        const PI = 3.14;
+    </code>
+   </div>
+   
+   
+   <p class="paragraphOfH2">
+    A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.
+   </p>
+   
+   <p class="paragraphOfH2">
+    The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.
+   </p>
+   
+   <p class="paragraphOfH2">
+    You cannot declare a constant with the same name as a  function or variable in the same scope. For example:
+   </p>
+   
+   <div class="codeSection">
+    <code>
+     // THIS WILL CAUSE AN ERROR function f() {}; const f = 5;      
+    </code>
+    <code>
+     // THIS WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements }
+    </code>
+   </div>
+   
+   <p class="paragraphOfH2">
+    However, object attributes are not protected, so the  following statement is executed without problems.
+   </p>
+   
+   <div class="codeSection">
+    <code>
+     const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";
+    </code>
+   </div>
+   
   </section>
   
 <!-- ________________________________
@@ -203,7 +367,45 @@ DATA TYPES
 ________________________________ -->
   <section class="containerOfContentH2">
    <h2 class="titleH2" id="dataTypeMainContent">Data types</h2>
-   <p class="paragraphOfH2">Earum enim vitae pariatur esse ullam nisi quae tenetur, excepturi, voluptatum veniam voluptas cupiditate velit distinctio deleniti, dignissimos ea voluptates perferendis! Nesciunt, sapiente? Harum fugiat deserunt error nobis rem magni!</p>
+    <p class="paragraphOfH2">
+     However, object attributes are not protected, so the following statement is executed without problems.
+    </p>
+    <ul class="unorderListOfParagraphs">
+     <li class="unorderListFirsLevel">
+      Six data types that are primitives:
+     </li>
+     
+     <div class="unorderListSecondLevel">
+      <li>
+       Boolean. true and false.
+      </li>
+      <li>
+       null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL,
+      or any other variant.
+     </li>
+      <li>
+       undefined. A top-level property whose value is undefined.
+      </li>
+      <li>
+       Number. 42 or 3.14159.
+      </li>
+      <li>
+       String. "Howdy"
+      </li>
+      <li>
+       Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.
+      </li>
+     </div>
+      
+     <li class="unorderListFirsLevel">
+      and Object
+     </li>
+    </ul>
+    
+    <p class="paragraphOfH2">
+     Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.
+    </p>
+    
   </section>
   
 <!-- ________________________________
@@ -211,7 +413,69 @@ IF... ELSE STATEMENT
 ________________________________ -->
   <section class="containerOfContentH2">
    <h2 class="titleH2" id="IfElseStatementMainContent">If... else statement</h2>
-   <p class="paragraphOfH2">Iure dolorum, in voluptatem voluptate harum necessitatibus nam dolores rerum pariatur maxime, eligendi, minus nulla perferendis assumenda aspernatur officia nihil quis. Et debitis quos soluta ad. Atque dolorem facilis aspernatur.</p>
+   <p class="paragraphOfH2">
+    Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:
+   </p>
+   
+   <div class="codeSection">
+    <code>
+     if (condition) { statement_1; } else { statement_2; }
+    </code>
+   </div>
+   
+   <p class="paragraphOfH2">
+    condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if statements.
+   </p>
+   
+   <p class="paragraphOfH2">
+    You may also compound the statements using else if to have multiple conditions tested in sequence, as follows:
+   </p>
+   
+   <div class="codeSection">
+    <code>
+     if (condition_1) { statement_1; } else if (condition_2) { statement_2; } else if (condition_n) { statement_n; } else { statement_last; }
+    </code>
+   </div>
+   
+   <p class="paragraphOfH2">
+    In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements:
+   </p>
+   
+   <div class="codeSection">
+    <code>
+     if (condition) { statement_1_runs_if_condition_is_true;
+    </code>
+    <code>
+     statement_2_runs_if_condition_is_true; } else {
+    </code>
+    <code>
+     statement_3_runs_if_condition_is_false;
+    </code>
+    <code>    
+     statement_4_runs_if_condition_is_false; }
+    </code>
+   </div>
+   
+   <p class="paragraphOfH2">
+    It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality when glancing over the code. For example, do not use the following code:
+   </p>
+   
+   <div class="codeSection">
+    <code>
+     if (x = y) { /* statements here */ }
+    </code>
+   </div>
+   
+   <p class="paragraphOfH2">
+    If you need to use an assignment in a conditional expression, a common practice is to put additional parentheses around the assignment. For example:
+   </p>
+   
+   <div class="codeSection">
+    <code>
+     if ((x = y)) { /* statements here */ }
+    </code>
+   </div>
+   
   </section>
   
 <!-- ________________________________
@@ -219,7 +483,61 @@ WHILE STATEMENT
 ________________________________ -->
   <section class="containerOfContentH2">
    <h2 class="titleH2" id="whileStatementMainContent">While statement</h2>
-   <p class="paragraphOfH2">Dolor optio distinctio impedit fugiat quia, ipsum expedita. Dolore magni consectetur adipisci veritatis modi, ex, excepturi, accusantium minus architecto aperiam quisquam neque enim accusamus id iste cumque animi ut sunt.</p>
+   <p class="paragraphOfH2">
+    A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:
+   </p>
+   
+   <div class="codeSection">
+    <code>
+     while (condition) statement
+    </code>
+   </div>
+   
+   <p class="paragraphOfH2">
+    If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop.
+   </p>
+   
+   <p class="paragraphOfH2">
+    The condition test occurs before statement in the loop is executed. If the condition returns true, statement is executed and the condition is tested again. If the condition returns false, execution stops and control is passed to the statement following while.
+   </p>
+   
+   <p class="paragraphOfH2">
+    To execute multiple statements, use a block statement ({ ... }) to group those statements.
+   </p>
+   
+   <p class="paragraphOfH2">
+    Example:
+   </p>
+   
+   <p class="paragraphOfH2">
+    The following while loop iterates as long as n is less than three:
+   </p>
+   
+   <div class="codeSection">
+    <code>
+     var n = 0; var x = 0; while (n < 3) { n++; x +=n; }
+    </code>
+   </div>
+   
+   <p class="paragraphOfH2">
+    With each iteration, the loop increments n and adds that value to x. Therefore, x and n take on the following values:
+   </p>
+   
+   <ul class="unorderListOfParagraphs">
+    <li class="unorderListFirsLevel">
+     After the first pass: n = 1 and x = 1
+    </li>
+    <li class="unorderListFirsLevel">
+     After the second pass: n = 2 and x = 3
+    </li>
+    <li class="unorderListFirsLevel">
+     After the third pass: n = 3 and x = 6
+    </li>
+   </ul>
+   
+   <p class="paragraphOfH2">
+    After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.
+   </p>
   </section>
   
 <!-- ________________________________
@@ -227,7 +545,45 @@ FUNCTION DECLARATIONS
 ________________________________ -->
   <section class="containerOfContentH2">
    <h2 class="titleH2" id="functionDeclarationsMainContent">Function declarations</h2>
-   <p class="paragraphOfH2">Totam harum voluptatem atque veritatis aspernatur est optio corporis nesciunt commodi in ipsa aliquam sapiente incidunt ratione earum ipsam magni a sunt nihil, temporibus debitis, maiores facilis. Nulla, dolore laboriosam!</p>
+   <p class="paragraphOfH2">
+    A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:
+   </p>
+   
+   <ul class="unorderListOfParagraphs">
+    <li class="unorderListFirsLevel">
+     The name of the function.
+    </li>
+    <li class="unorderListFirsLevel">
+     A list of arguments to the function, enclosed in parentheses and separated by commas.
+    </li>
+    <li class="unorderListFirsLevel">
+     The JavaScript statements that define the function, enclosed in curly brackets, { }.
+    </li>
+   </ul>
+     
+   <p class="paragraphOfH2">
+    For example, the following code defines a simple function named square:
+   </p>
+   
+   <div class="codeSection">
+    <code>
+     function square(number) { return number * number; }
+    </code>
+   </div>
+   
+   <p class="paragraphOfH2">
+    The function square takes one argument, called number. The function consists of one statement that says to return the argument of the function (that is, number) multiplied by itself. The return statement specifies the value returned by the function.
+   </p>
+   
+   <div class="codeSection">
+    <code>
+     return number * number; 
+    </code>
+   </div>
+   
+   <p class="paragraphOfH2">
+    Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.
+   </p>
   </section>
   
 <!-- ________________________________
@@ -235,22 +591,33 @@ REFERENCE
 ________________________________ -->
   <section class="containerOfContentH2">
    <h2 class="titleH2" id="referenceMainContent">Reference</h2>
-   <p class="paragraphOfH2">Dolore quidem voluptatem excepturi tempore, repellendus voluptate sed cupiditate pariatur dicta accusantium aliquam minima error sunt dolorem! Voluptatem beatae cum repudiandae reiciendis facere dicta neque? Odio eaque magni alias vitae.</p>
-  </section>
- 
+   <ul class="unorderListOfParagraphs">
+    <li class="unorderListFirsLevel">
+      All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN</a>
+     </li>
+   </ul>
+  </section>  
+ </div>
 <!-- ________________________________
 FOOTER
 ________________________________ -->  
-  <footer id="footer">Footer Here</footer>
-
-
-
- </div>
- 
- 
- 
- 
- 
-
+  <section id="containerOfFooter">
+   <div>
+    <p id="paragraphOfFooter">
+     This web page was created by JuanPasténCastillo
+    </p>
+    
+    <address id="adressFooter">
+     Contact me on 
+     <a href="https://twitter.com/JuanPastn2" target="_blank" class="linkOnFooter">Twitter</a>
+     or 
+     <a href="https://www.linkedin.com/in/juan-past%C3%A9n-castillo-078b5817a/" target="_blank" class="linkOnFooter">Linkedin.</a>
+     
+     See my work on
+     
+     <a href="https://github.com/JuanPastenCastillo" target="_blank" class="linkOnFooter">Github</a>
+    </address>
+   </div>
+  </section>
 </body>
 </html>
